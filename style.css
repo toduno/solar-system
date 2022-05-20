@@ -1,0 +1,149 @@
+/* MAIN STYLES */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url('./images/galaxy.gif');
+    background-position: fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    width: 80%;
+    margin: auto;
+}
+h1 {
+    margin: 3% auto 5% auto;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+input, select, button {
+    border-radius: 5px;
+}
+input {
+    height: 4.3vh;
+    width: 99%;
+}
+select, button {
+    height: 5.2vh;
+    width: 100%;
+}
+button {
+    background-color: rgb(65, 63, 63);
+    height: 5.8vh;
+}
+.white {
+    color: #fff;
+}
+.flex-container {
+    background-color: rgba(24, 23, 23, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    margin: 8% auto;
+    width: 70%;
+}
+.description {
+    background: rgba(57, 55, 55, 0.5);
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    line-height: 2vh;
+    text-align: center;
+}
+.text {
+        font-size: 1.3em;
+}
+.required {
+        text-align: center;
+        vertical-align: center;
+        margin: 5% auto;
+}
+.required-text {
+        margin-top: 6.5%;
+}
+
+/* RESPONSIVENESS */
+
+@media (min-width: 800px) {
+    header {
+        display: inline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+    h1 {
+        font-size: 2.7em;
+        max-width: 90%;
+    }
+    input {
+        height: 4.3vh;
+        width: 15%;
+    }
+    select, button {
+        height: 5.1vh;
+        width: 10%;
+        margin: auto 4px auto 2px;
+    }
+    button {
+        width: auto;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;	
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    img {
+        margin: 7% auto;
+        width: 80%;
+    }
+    .description {
+        background: rgba(57, 55, 55, 0.5);
+        border-radius: 5px;
+        width: 40%;
+        height: auto;
+        line-height: 3vh;
+        margin: 5% 5%;
+        text-align: center;
+    }
+    .text {
+        font-size: 1.7em;
+    }
+    .paragraph {
+        font-size: 1.25em;
+    }
+    .required-text {
+        margin-top: 9%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+    h1 {
+        font-size: 2.3em;
+    }
+    img {
+        margin: 7% auto;
+        
+    }
+    .text {
+        font-size: 1.4em;
+    }
+    .paragraph {
+        font-size: 1.15em;
+    }
+}
